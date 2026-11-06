@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Recruiting Assistant</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">RA</span>
+      <div>
+        <div class="brand-name">Recruiting Assistant</div>
+        <div class="brand-sub">for Paycor</div>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <a href="#/home" data-route="home"><span class="nav-icon" data-icon="home"></span>Home</a>
+      <a href="#/jobs" data-route="jobs"><span class="nav-icon" data-icon="briefcase"></span>Jobs</a>
+      <a href="#/screen" data-route="screen"><span class="nav-icon" data-icon="search"></span>Screen applicants</a>
+      <a href="#/outreach" data-route="outreach"><span class="nav-icon" data-icon="send"></span>Daily outreach</a>
+      <a href="#/attention" data-route="attention"><span class="nav-icon" data-icon="flag"></span>Needs attention<span class="nav-badge" id="nav-attention" hidden></span></a>
+      <a href="#/candidates" data-route="candidates"><span class="nav-icon" data-icon="users"></span>Candidates</a>
+      <a href="#/settings" data-route="settings"><span class="nav-icon" data-icon="gear"></span>Settings</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="sidebar-foot" id="run-indicator" hidden>
+        <span class="spinner" aria-hidden="true"></span><span id="run-indicator-text">Working…</span>
+      </div>
+      <div class="account" id="account" hidden>
+        <span class="status good" id="account-status"></span>
+        <button class="ghost small" id="logout-btn">Log out</button>
+      </div>
+    </div>
+  </aside>
+  <main id="main" tabindex="-1" aria-live="polite"></main>
+</div>
+<div class="gate" id="gate" hidden></div>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

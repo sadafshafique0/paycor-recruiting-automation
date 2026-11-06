@@ -1,0 +1,24 @@
+{
+  "name": "autonomous-paycor-workflow",
+  "version": "0.1.0",
+  "description": "Unattended Paycor recruiting pipeline: resume screening (Claude judgment), outreach/reminders/escalation, and fluency scoring — driven by a local dashboard, not a live Claude Code chat session.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js --open",
+    "dashboard": "node server/index.js",
+    "login": "node cli/login.js",
+    "run-daily": "node cli/run-daily.js",
+    "add-candidates": "node cli/add-candidates.js",
+    "screen-job": "node cli/screen-job.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "express": "^4.19.2",
+    "mammoth": "^1.13.0",
+    "pdfjs-dist": "^6.4.299",
+    "playwright": "^1.45.0",
+    "tesseract.js": "^7.0.0",
+    "word-extractor": "^1.0.4"
+  }
+}

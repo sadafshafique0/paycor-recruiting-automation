@@ -1,0 +1,37 @@
+{
+  "name": "Your Name",
+  "screening": {
+    "engine": "rules",
+    "maxPassesPerRun": 25
+  },
+  "pipelines": [
+    {
+      "key": "hr-director-101",
+      "jobId": "101",
+      "company": "Example Co",
+      "sourceStatus": "Resume Quick Screen",
+      "templates": {
+        "firstContact": "Intro Email",
+        "firstContactReminder": "Intro Reminder",
+        "attentionToDetail1": "Detail Check Email",
+        "attentionToDetail1Reminder": "Detail Check Reminder",
+        "attentionToDetail2": "Second Notice",
+        "attentionToDetail2Reminder": "Second Notice Reminder",
+        "fluencyEvaluation": "Fluency Evaluation Email",
+        "fluencyReminder": "Fluency Reminder"
+      },
+      "targetStatuses": {
+        "firstContact": "Preliminary Screen Attempt 1",
+        "attentionToDetail1": "Attention to detail review",
+        "attentionToDetail2": "Attention to detail review",
+        "fluencyEvaluation": "Fluency/Typing Evaluation 1"
+      },
+      "managerEmail": "manager@example.com",
+      "passReasons": {
+        "noResponse": "No response from the candidate",
+        "otherQualified": "Other candidates more qualified / better fit"
+      },
+      "screeningCriteriaFile": null
+    }
+  ]
+}

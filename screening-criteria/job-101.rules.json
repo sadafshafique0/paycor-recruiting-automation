@@ -1,0 +1,18 @@
+{
+  "requiredSkills": [
+    {
+      "name": "warehouse",
+      "alternatives": ["warehouse", "logistics", "fulfillment", "distribution center", "inventory"]
+    }
+  ],
+  "preferredSkills": ["forklift", "Excel", "WMS | warehouse management system"],
+  "minimumYears": 2,
+  "allowedLocations": [],
+  "blockedLocations": [],
+  "jobHopping": {
+    "maxShortJobs": 2,
+    "shortJobMonths": 12,
+    "lookbackYears": 5
+  },
+  "minimumWords": 60
+}

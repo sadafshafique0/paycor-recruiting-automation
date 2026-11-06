@@ -1,0 +1,26 @@
+{
+  "about": "Shared recruiting steps for everyone using this app. Edit on the dashboard Settings page. Each pipeline in a personal config can still override a step.",
+  "templates": {
+    "firstContact": "Intro Email",
+    "firstContactReminder": "Reminder Email",
+    "attentionToDetail1": "Detail Check Email",
+    "attentionToDetail1Reminder": "Reminder Email",
+    "attentionToDetail2": "Reminder Email",
+    "attentionToDetail2Reminder": "Reminder Email",
+    "fluencyEvaluation": "Fluency Evaluation Email",
+    "fluencyReminder": "Reminder Email"
+  },
+  "targetStatuses": {
+    "resumeScreened": "Resume Quick Screen",
+    "firstContact": "Preliminary Screen Attempt 1",
+    "attentionToDetail1": "Attention to Detail Review",
+    "attentionToDetail2": "Attention to Detail Review",
+    "fluencyEvaluation": "Fluency / Typing Evaluation 1"
+  },
+  "passReasons": {
+    "noResponse": "No response from the candidate",
+    "otherQualified": "Other candidates more qualified / better fit"
+  },
+  "updatedAt": "2026-10-19T19:11:58.518Z",
+  "updatedBy": "Alex Recruiter"
+}

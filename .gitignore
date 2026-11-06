@@ -1,0 +1,16 @@
+node_modules/
+
+# Everything personal/PII lives under %LOCALAPPDATA%\AutonomousPaycorWorkflow instead of here
+# (see src/config.js), but guard against anyone pointing env vars at the repo folder anyway.
+candidatesState.json
+manualReview.json
+*.log
+NEEDS-ATTENTION.txt
+
+# Real applicants' names — never commit
+screening-results/
+resumes/
+.playwright-mcp/
+
+.env
+config.json
